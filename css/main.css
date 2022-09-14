@@ -103,9 +103,9 @@ h2 {
 .whatsapp img {
   z-index: 1000;
   position: fixed;
-  bottom: 10vh;
+  bottom: 135px;
   right: 5vw;
-  width: 80px;
+  width: 65px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-filter: opacity(70%);
