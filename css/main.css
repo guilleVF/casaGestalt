@@ -236,7 +236,7 @@ header .nav .nav-toggle-label span::after {
 }
 
 footer {
-  height: 100px;
+  height: 130px;
   width: 100%;
   background-color: #505F80;
   -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
@@ -292,7 +292,7 @@ footer .footerWrapper .footerTexto {
 }
 
 footer .footerWrapper .footerTexto p {
-  line-height: 1.5em;
+  line-height: 1.4em;
   color: #fdf8f5;
   font-size: 1.2em;
   font-weight: 500;
