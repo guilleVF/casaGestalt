@@ -47,12 +47,17 @@ table {
 }
 p {
     color: $color-text-secondary;
-    line-height: 21px;
-    font-size: 1.7em;
+    line-height: 28px;
+    font-size: 1.8em;
     font-weight: 400;
 }
 a {
     all:unset;
+}
+h2 {
+    font-size: 2.8em;
+    font-weight: 800;
+    color: $color-text-primary;
 }
 .btn {
     display: inline-block;
@@ -64,7 +69,7 @@ a {
     &:hover {
         cursor: pointer;  
         box-shadow: 0px 0px 10px 0px lightgrey;
-        transform: scale(100.2%);
+        transform: scale(101.5%);
     }
     &:active {
         transform: scale(97%);
@@ -74,7 +79,23 @@ a {
         font-weight: 600;
     }
 }
-
+.banner {
+    img {
+        width: 100%;
+    }
+}
+.whatsapp {
+    img {
+        z-index: 1000;
+        position: fixed;
+        bottom: 10vh;
+        right: 5vw;
+        width: 80px;
+        object-fit: cover;
+        filter: opacity(70%);
+        cursor: pointer;
+    }
+}
 
 header {
     position: fixed;
@@ -88,13 +109,15 @@ header {
     width: 100%;
     background-color: $color-hf;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    align-content: center;
 
     .logo {
         grid-column: 2/3;
-        width: 135px;
-        height: 15px;
-        background-color: #FBBB74;
         justify-self: center;
+        // height: 70px;
+        img {
+            max-height: 35px;
+        }
     }
 
     .nav {
@@ -103,6 +126,7 @@ header {
         margin-right: 7vw;
         ul {
             opacity: 0;
+            visibility: hidden;
             transition: opacity 300ms ease;
             display: flex;
             flex-direction: column;
@@ -111,7 +135,7 @@ header {
             width: 100%;
             top: 100%;
             right: 0%;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(255, 255, 255, 0.8);
             padding-top: 35px;
             padding-bottom: 35px;
 
@@ -119,18 +143,19 @@ header {
                 margin-top: 1.5rem;
                 margin-bottom: 1.5rem;
                 margin-right: 35px;
-                color: #FFFAF4;
-                font-size: 23px;
-                font-weight: 400;
+                color: $color-text-primary;
+                font-size: 2em;
+                font-weight: 500;
                 letter-spacing: 1px;
-                text-shadow: 1px 1px rgba(0,0,0,0.25);
+                // text-shadow: 1px 1px rgba(0,0,0,0.25);
             }
         }
         .nav-toggle { /*Eliminamos el checkbox*/
             display: none;
-            
+            // cursor: pointer;
             &:checked ~ ul {
                 opacity: 1;
+                visibility: visible;
                 li {
                     opacity: 1;
                 }
@@ -145,7 +170,7 @@ header {
 
             & span {
                 display: block;
-                background: #3F3F3F;
+                background: beige;
                 height: 1.8px;
                 width: 2.5em;
                 border-radius: 2px;
@@ -167,7 +192,46 @@ header {
         }
     }
 }
-    
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: $color-hf;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        padding: 0 2em;
+        img {
+            max-height: 35px;
+        }
+    }
+    .footerWrapper {
+        display: flex;
+        align-items: center;
+        padding: 0 2em;
+        .footerRedes {
+            display: flex;
+            flex-direction: column;
+            padding: 0 1.2em;
+            cursor: pointer;
+            img {
+                padding: 0.5em 0;
+                width: 28px;
+            }
+        }
+        .footerTexto {
+            text-align: end;
+            p {
+                line-height: 1.5em;
+                color: $color-background;
+                font-size: 1.2em;
+                font-weight: 500;
+            }
+        }
+    }
+}
 
 
 .hero {
@@ -179,32 +243,90 @@ header {
         width: 100%;
         height: 100%;
         object-fit:cover;
-        filter: brightness(85%);
+        filter: brightness(80%);
     }
     h1 {
+        width: 100%;
+        padding: 0 15% 0 15%;
         position: absolute;
-        top: 55%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, 50%);
-        font-size: 3em;
-        text-align: start;
-        font-weight: 700;
+        font-size: 3.5em;
+        text-align: center;
+        font-weight: 800;
         color: $color-background;
-        letter-spacing: -0.05em;
         line-height: 35px;
+        // text-shadow: 2px 2px 2px grey;
     }
 }
 
-.bienvenida {
-    padding: 50px 30px 50px 30px;
+.textBlock {
+    padding: 80px 20px 50px 20px;
     text-align: center;
     .btn {
-        margin-top: 35px;
+        margin-top: 7em;
     }
+    p {
+        padding: 5px 0 5px 0;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 500px;
+    margin: 5em 0;
+    .swiper-slide {
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .swiper-text {
+            height: 250px;
+            padding: 20px;
+            h2 {
+                padding: 15px 0;
+                font-size: 2em;
+                color: $color-text-secondary;
+            }
+        }
+    }
+    .swiper-button-prev {
+        color: lightgrey;
+    }
+    .swiper-button-next {
+        color: lightgrey;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: $color-hf;
+    }
+}
+
+.ramas {
+    h2 {
+        text-align: center;
+        padding: 2em 1em;
+    }
+    .rama {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 3em 0;
+        img {
+            max-width: 70%;
+        }
+        .ramaTexto {
+            text-align: center;
+            max-width: 70%;
+            padding: 4em 0;
+        }
+    }
+
 }
 
 .cards {
-    padding: 40px 20px 40px 20px;
+    padding: 5em 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
@@ -227,15 +349,27 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 20px 20px 20px 20px;
             p {
                 color: $color-text-primary;
-                padding: 5px;
+                line-height: 1.2em;
                 font-weight: 500;
                 font-size: 1.5em;
-                // display: inline-block;
                 text-align: center;
             }
         }
     }
+}
 
+.testimonios {
+    width: 100%;
+    text-align: center;
+    h2 {
+        padding: 2em 0;
+    }
+    img {
+        padding: 2em 0;
+        width: 90%;
+        object-fit: cover;
+    }
 }
