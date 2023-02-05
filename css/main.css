@@ -189,12 +189,13 @@ header .nav ul {
 header .nav ul li {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  margin-right: 35px;
+  margin-right: 15px;
   color: #3F3F3F;
-  font-size: 1.7em;
-  font-weight: 500;
+  font-size: 1.6em;
+  font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
+  text-align: end;
 }
 header .nav .nav-toggle { /*Eliminamos el checkbox*/
   display: none;
@@ -243,29 +244,28 @@ header .nav .nav-toggle-label span::after {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   background-color: #FFC27A;
   padding: 30px;
+  gap: 30px;
 }
 footer p {
   font-size: 1.2em;
 }
 footer .footer_redes {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 18px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 footer .footer_redes p {
   font-size: 1.4em;
   color: #3F3F3F;
   font-weight: 800;
 }
-footer .footer_redes img {
-  width: 38px;
-  height: 38px;
-  margin-right: 20px;
+footer .footer_redes i {
+  margin-right: 5px;
 }
 footer .footer_contacto {
   display: flex;
@@ -396,7 +396,7 @@ footer .footer_contacto .footer_contacto_item p {
   margin: auto;
 }
 .ramas .ramas_texto {
-  max-width: 70%;
+  max-width: 85%;
 }
 .ramas .botones_ramas {
   padding-top: 55px;
@@ -498,7 +498,7 @@ footer .footer_contacto .footer_contacto_item p {
 }
 
 .listaEmpresas {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 600;
 }
 
