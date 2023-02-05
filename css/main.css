@@ -98,6 +98,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .btn_cuadrado .cuerpo {
   text-align: center;
@@ -522,6 +523,7 @@ footer .footer_contacto .footer_contacto_item p {
 }
 .cards_form .card_lg .btn_cuadrado {
   margin-top: -26px;
+  cursor: pointer;
 }
 .cards_form .card_lg .btn_cuadrado .flecha_contenedor {
   width: 10%;

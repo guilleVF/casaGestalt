@@ -91,6 +91,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     .cuerpo {
         text-align: center;
         width: 200px;
@@ -574,6 +575,7 @@ footer {
         }
         .btn_cuadrado {
             margin-top: -26px;
+            cursor: pointer;
             // width: 60vw;
             .flecha_contenedor {
                 width: 10%;
