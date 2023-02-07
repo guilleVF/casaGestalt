@@ -624,6 +624,15 @@ footer .footer_contacto .footer_contacto_item p {
   padding-bottom: 20px;
 }
 
+.banner_casaGestalt {
+  position: absolute;
+  bottom: 0;
+}
+.banner_casaGestalt img {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
 .contacto_contenedor {
   display: flex;
   padding: 50px;
@@ -636,6 +645,9 @@ footer .footer_contacto .footer_contacto_item p {
 }
 .contacto_contenedor .footer_contacto_item i {
   color: #FFC27A;
+}
+.contacto_contenedor .footer_contacto_item p {
+  font-size: 1.5em;
 }
 .contacto_contenedor .contenedor_redes {
   margin-top: 30px;

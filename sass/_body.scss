@@ -660,6 +660,15 @@ footer {
 
 // Pagina 6
 
+.banner_casaGestalt {
+    position: absolute;
+    bottom: 0;
+    img {
+        width: 100%;
+        margin-bottom: -5px;
+    }
+}
+
 .contacto_contenedor {
     display: flex;
     padding: 50px;
@@ -670,6 +679,9 @@ footer {
         gap: 20px;
         i {
             color: $color-accent;
+        }
+        p {
+            font-size: 1.5em;
         }
     }
     .contenedor_redes {
