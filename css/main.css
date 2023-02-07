@@ -88,6 +88,10 @@ h2 {
   font-weight: 600;
 }
 
+.subtitulado {
+  text-decoration: underline;
+}
+
 .col3 {
   display: grid;
   grid-gap: 10px;
@@ -247,9 +251,11 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #FFC27A;
   padding: 30px;
   gap: 30px;
+}
+footer i {
+  color: #FFC27A;
 }
 footer p {
   font-size: 1.2em;
@@ -586,4 +592,55 @@ footer .footer_contacto .footer_contacto_item p {
 }
 .card_curso .card_lg .btn_cuadrado_3 .cuerpo {
   background-color: #c68640;
+}
+
+.listaCursos {
+  width: 100vw;
+}
+.listaCursos ul {
+  padding: 10px 20px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.listaCursos ul li {
+  font-size: 1.9em;
+  margin-bottom: 20px;
+  color: #1d3a5d;
+  font-weight: 600;
+}
+
+.btn_contenedor {
+  display: flex;
+  justify-content: center;
+}
+.btn_contenedor .btn {
+  margin: 15px 0 50px 0;
+}
+.btn_contenedor .btn p {
+  font-size: 1.5em;
+}
+
+.textTestimonios p {
+  padding-bottom: 20px;
+}
+
+.contacto_contenedor {
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  gap: 20px;
+}
+.contacto_contenedor .footer_contacto_item {
+  display: flex;
+  gap: 20px;
+}
+.contacto_contenedor .footer_contacto_item i {
+  color: #FFC27A;
+}
+.contacto_contenedor .contenedor_redes {
+  margin-top: 30px;
+}
+.contacto_contenedor .contenedor_redes i {
+  margin-right: 15px;
+  color: #FFC27A;
 }/*# sourceMappingURL=main.css.map */

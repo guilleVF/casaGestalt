@@ -81,6 +81,10 @@ h2 {
     }
 }
 
+.subtitulado {
+    text-decoration: underline;
+}
+
 .col3 {
     display: grid;
     grid-gap: 10px;
@@ -240,45 +244,6 @@ header {
     }
 }
 
-// footer {
-//     height: 130px;
-//     width: 100%;
-//     background-color: $color-hf;
-//     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     .logo {
-//         padding: 0 2em;
-//         img {
-//             max-height: 35px;
-//         }
-//     }
-//     .footerWrapper {
-//         display: flex;
-//         align-items: center;
-//         padding: 0 2em;
-//         .footerRedes {
-//             display: flex;
-//             flex-direction: column;
-//             padding: 0 1.2em;
-//             cursor: pointer;
-//             img {
-//                 padding: 0.5em 0;
-//                 width: 28px;
-//             }
-//         }
-//         .footerTexto {
-//             text-align: end;
-//             p {
-//                 line-height: 1.4em;
-//                 color: $color-background;
-//                 font-size: 1.2em;
-//                 font-weight: 500;
-//             }
-//         }
-//     }
-// }
 .footer_banner {
     img {
         height: 130px;
@@ -292,9 +257,12 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: $color-accent;
+    // background-color: $color-accent;
     padding: 30px;
     gap: 30px;
+    i {
+        color: $color-accent;
+    }
     p {
         font-size: 1.2em;
     }
@@ -653,5 +621,62 @@ footer {
             }
         }
     }
+}
 
+// Pagina 4
+
+.listaCursos {
+    width: 100vw;
+    ul {
+        padding: 10px 20px;
+        list-style-type:disc;
+        list-style-position: inside;
+        li {
+            font-size: 1.9em;
+            margin-bottom: 20px;
+            color: $color-hf-strong;
+            font-weight: 600;
+        }
+    }
+}
+.btn_contenedor {
+    display: flex;
+    justify-content: center;
+    .btn {
+        margin: 15px 0 50px 0;
+        p {
+            font-size: 1.5em;
+        }
+    }
+}
+
+// Pagina 5
+
+.textTestimonios {
+    p {
+        padding-bottom: 20px;
+    }
+}
+
+// Pagina 6
+
+.contacto_contenedor {
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    gap: 20px;
+    .footer_contacto_item {
+        display: flex;
+        gap: 20px;
+        i {
+            color: $color-accent;
+        }
+    }
+    .contenedor_redes {
+        margin-top: 30px;
+        i {
+            margin-right: 15px;
+            color: $color-accent;
+        }
+    }
 }
