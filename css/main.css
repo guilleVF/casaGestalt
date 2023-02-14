@@ -425,6 +425,18 @@ footer .footer_contacto .footer_contacto_item p {
   gap: 35px;
   margin-bottom: 50px;
 }
+.ramas .botones_ramas a :hover {
+  transition: all 0.2s;
+  transform: translateX(-8px);
+}
+.ramas .botones_ramas .flecha {
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 .ramas .botones_ramas .btn_cuadrado_1 .cuerpo {
   background-color: #346094;
 }
@@ -457,7 +469,7 @@ footer .footer_contacto .footer_contacto_item p {
 .cards .card {
   background-color: #fdf8f5;
   box-shadow: 0px 0px 10px 1px lightgrey;
-  height: 120px;
+  height: 180px;
   border-radius: 5px;
   overflow: hidden;
   width: 100%;
@@ -504,9 +516,10 @@ footer .footer_contacto .footer_contacto_item p {
 .cards .card .card_text p {
   color: #3F3F3F;
   line-height: 1.2em;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.3em;
   text-align: center;
+  text-shadow: 2px 2px 20px lightgrey;
 }
 
 .testimonios {
