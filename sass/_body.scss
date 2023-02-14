@@ -137,7 +137,7 @@ h2 {
         position: fixed;
         bottom: 135px;
         right: 5vw;
-        width: 65px;
+        width: 60px;
         object-fit: cover;
         filter: opacity(70%);
         cursor: pointer;
@@ -380,12 +380,27 @@ footer {
             object-fit: cover;
         }
         .swiper-text {
-            height: 200px;
+            height: 300px;
             padding: 3em 6em;
+            // position: relative;
             h2 {
                 padding: 10px 0;
                 font-size: 2em;
                 color: $color-text-secondary;
+            }
+            .btn {
+                // position: absolute;
+                // bottom: 10%;
+                margin: 10px 0;
+                background-color: $color-accent;
+                p {
+                    color: $color-text-primary;
+                }
+            }
+            .fechaInicio {
+                font-size: 2em;
+                padding: 15px 0;
+                font-weight: 600;
             }
         }
     }
@@ -455,12 +470,19 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
     justify-content: center;
+    a {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
     .card {
         background-color: $color-background;
         box-shadow: 0px 0px 10px 1px lightgrey;
         height: 120px;
         border-radius: 5px;
         overflow: hidden;
+        width: 100%;
+        max-width: 400px;
         .card_img {
             object-fit: cover;
             width: 100%;
@@ -534,6 +556,7 @@ footer {
     .card_lg {
         cursor: pointer;
         width: 60vw;
+        max-width: 250px;
         img {
             // width: 60vw;
             width: 100%;
@@ -619,6 +642,30 @@ footer {
             .cuerpo {
                 background-color: #c68640  ;
             }
+        }
+    }
+    .cursoDetalles {
+        transition: all 0.5s;
+        overflow: hidden;
+        max-height: 0;
+        padding: 15px 50px;
+        text-align: justify;
+        h3 {
+            color: $color-hf;
+            line-height: 1.4em;
+            font-size: 1.7em;
+            font-weight: 700;
+            margin: 15px 0;
+        }
+        li{
+            color: #808080;
+            line-height: 1.4em;
+            font-size: 1.7em;
+            font-weight: 500;
+            list-style-type: disc;
+        }
+        hr{
+            margin: 20px 0;
         }
     }
 }

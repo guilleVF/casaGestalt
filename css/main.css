@@ -142,7 +142,7 @@ h2 {
   position: fixed;
   bottom: 135px;
   right: 5vw;
-  width: 65px;
+  width: 60px;
   -o-object-fit: cover;
      object-fit: cover;
   filter: opacity(70%);
@@ -369,13 +369,25 @@ footer .footer_contacto .footer_contacto_item p {
      object-fit: cover;
 }
 .swiper .swiper-slide .swiper-text {
-  height: 200px;
+  height: 300px;
   padding: 3em 6em;
 }
 .swiper .swiper-slide .swiper-text h2 {
   padding: 10px 0;
   font-size: 2em;
   color: #808080;
+}
+.swiper .swiper-slide .swiper-text .btn {
+  margin: 10px 0;
+  background-color: #FFC27A;
+}
+.swiper .swiper-slide .swiper-text .btn p {
+  color: #3F3F3F;
+}
+.swiper .swiper-slide .swiper-text .fechaInicio {
+  font-size: 2em;
+  padding: 15px 0;
+  font-weight: 600;
 }
 .swiper .swiper-pagination-bullet-active {
   background-color: #346094;
@@ -437,12 +449,19 @@ footer .footer_contacto .footer_contacto_item p {
   grid-gap: 15px;
   justify-content: center;
 }
+.cards a {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
 .cards .card {
   background-color: #fdf8f5;
   box-shadow: 0px 0px 10px 1px lightgrey;
   height: 120px;
   border-radius: 5px;
   overflow: hidden;
+  width: 100%;
+  max-width: 400px;
 }
 .cards .card .card_img {
   -o-object-fit: cover;
@@ -519,6 +538,7 @@ footer .footer_contacto .footer_contacto_item p {
 .cards_form .card_lg {
   cursor: pointer;
   width: 60vw;
+  max-width: 250px;
 }
 .cards_form .card_lg img {
   width: 100%;
@@ -592,6 +612,30 @@ footer .footer_contacto .footer_contacto_item p {
 }
 .card_curso .card_lg .btn_cuadrado_3 .cuerpo {
   background-color: #c68640;
+}
+.card_curso .cursoDetalles {
+  transition: all 0.5s;
+  overflow: hidden;
+  max-height: 0;
+  padding: 15px 50px;
+  text-align: justify;
+}
+.card_curso .cursoDetalles h3 {
+  color: #346094;
+  line-height: 1.4em;
+  font-size: 1.7em;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.card_curso .cursoDetalles li {
+  color: #808080;
+  line-height: 1.4em;
+  font-size: 1.7em;
+  font-weight: 500;
+  list-style-type: disc;
+}
+.card_curso .cursoDetalles hr {
+  margin: 20px 0;
 }
 
 .listaCursos {
