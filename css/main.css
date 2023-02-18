@@ -523,7 +523,7 @@ footer .footer_contacto .footer_contacto_item p {
 }
 .ramas .btn {
   display: block;
-  margin: auto;
+  margin: 70px auto;
   width: 300px;
   text-align: center;
   font-size: 0.8em;
@@ -914,9 +914,6 @@ footer .footer_contacto .footer_contacto_item p {
   }
   .ramas .botones_ramas {
     flex-direction: row;
-  }
-  .ramas .btn {
-    margin: 70px auto;
   }
   .cards {
     max-width: 1200px;

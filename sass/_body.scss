@@ -553,10 +553,11 @@ footer {
     }
     .btn {
         display: block;
-        margin: auto;
+        margin: 70px auto;
         width: 300px;
         text-align: center;
         font-size: 0.8em;
+        
     }
 
 }
@@ -974,9 +975,6 @@ footer {
         }
         .botones_ramas {
             flex-direction: row;
-        }
-        .btn {
-            margin: 70px auto;
         }
     }
     
