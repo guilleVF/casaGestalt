@@ -441,6 +441,7 @@ footer {
             width: 100%;
             object-fit: cover;
             margin-bottom: 20px;
+            box-shadow: 5px 5px 10px lightgrey;
         }
         .swiper-text {
             height: 300px;
@@ -919,6 +920,9 @@ footer {
         }
         .btn {
             margin: 0;
+            p {
+                margin: 5px;
+            }
         }
     }
 
@@ -945,7 +949,7 @@ footer {
             img {
                 max-width: 60%;
                 margin-left: 70px;
-                border-radius: 10px;
+                border-radius: 5px;
                 margin-bottom: 30px;
             }
         }
