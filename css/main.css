@@ -965,6 +965,9 @@ footer .footer_contacto .footer_contacto_item p {
     flex-direction: row;
     justify-content: space-evenly;
   }
+  .cursoDetalles {
+    max-width: 900px;
+  }
   .listaCursos {
     max-width: 800px;
     margin: auto;
