@@ -18,6 +18,7 @@ time, mark, audio, video {
   font-family: "Montserrat", sans-serif;
   vertical-align: baseline;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -70,6 +71,12 @@ h2 {
   font-size: 2.8em;
   font-weight: 800;
   color: #3F3F3F;
+}
+
+.negrita {
+  font-weight: 600;
+  color: #808080;
+  font-size: 1em;
 }
 
 .btn {
@@ -170,7 +177,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  height: 70px;
+  height: 80px;
   width: 100%;
   background-color: #346094;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
@@ -208,7 +215,7 @@ header .nav ul li {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   margin-right: 15px;
-  color: #3F3F3F;
+  color: #1d3a5d;
   font-size: 1.6em;
   font-weight: 600;
   letter-spacing: 1px;
@@ -258,6 +265,10 @@ header .nav .nav-toggle-label span::after {
      object-fit: cover;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
+  box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.25);
+  filter: contrast(110%);
+  filter: brightness(90%);
+  filter: saturate(80%);
 }
 
 footer {
@@ -347,13 +358,18 @@ footer .footer_contacto .footer_contacto_item p {
      object-position: 50% 45%;
 }
 
+.hero7 img {
+  -o-object-position: 50% 38%;
+     object-position: 50% 38%;
+}
+
 .heroInicio {
   position: relative;
   height: 300px;
   box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.25);
   text-align: center;
   margin-top: 70px;
-  background-image: url("../img/nubes.jpg");
+  background-image: url("../img/nubes.webp");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -806,6 +822,9 @@ footer .footer_contacto .footer_contacto_item p {
 }
 
 @media screen and (min-width: 900px) {
+  header {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
   header .logo {
     grid-column: 1/2;
   }
@@ -814,7 +833,7 @@ footer .footer_contacto .footer_contacto_item p {
   }
   header .nav ul {
     opacity: 100;
-    grid-column: 2/4;
+    grid-column: 2/5;
     display: flex;
     align-items: center;
     height: 100%;
@@ -830,7 +849,7 @@ footer .footer_contacto .footer_contacto_item p {
   }
   header .nav ul li {
     font-size: 1.25em;
-    line-height: 15px;
+    line-height: 14px;
     text-align: center;
     color: #fdf8f5;
     font-weight: 500;
@@ -937,8 +956,8 @@ footer .footer_contacto .footer_contacto_item p {
   }
   .footer_banner img {
     height: 250px;
-    -o-object-position: 50% 50%;
-       object-position: 50% 50%;
+    -o-object-position: 50% 25%;
+       object-position: 50% 25%;
   }
   .textBlock {
     text-align: justify;

@@ -18,6 +18,6 @@ const swiper = new Swiper('.swiper', {
     },
   });
 
-  swiper.click(swiper, navigationNext)
+  // swiper.click(swiper, navigationNext)
 
 
