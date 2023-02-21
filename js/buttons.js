@@ -1,17 +1,3 @@
-// const card_lg = document.querySelector('#card_lg3b1');
-// const cursoDetalles = document.querySelector('#cursoDetalles3b1')
-
-// card_lg.addEventListener('click', function() {
-//   if (cursoDetalles.style.opacity === '0') {
-//     cursoDetalles.style.opacity = '100';
-//     cursoDetalles.style.maxHeight = '2000px';
-//   } else {
-//     cursoDetalles.style.opacity = '0';
-//     cursoDetalles.style.maxHeight = '0';
-//   }
-// });
-
-
 // Hacemos aparecer o desaparecer los detalles de cada curso
 const all_card_lg = document.querySelectorAll('.card_lg');
 const all_cursoDetalles = document.querySelectorAll('.cursoDetalles');
@@ -33,7 +19,9 @@ all_card_lg.forEach(function(card_lg) {
 });
 
 // Hacemos que al desplazarnos a cada curso, se desplieguen los detalles
-window.onload = function() {
+//  siempre y cuando estemos accediendo desde el swiper
+
+// window.onload = function() {
   const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('myParam') === '1') {
       // desplazar la página a la sección
@@ -59,7 +47,7 @@ window.onload = function() {
       document.getElementById("card_lg3c1").click();
       // document.getElementById("card_lg3a1").click();
     }
-};
+// }
 
 
 window.onload = function() {
