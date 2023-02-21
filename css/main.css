@@ -832,6 +832,18 @@ footer .footer_contacto .footer_contacto_item p {
   color: #FFC27A;
 }
 
+.mapaContenedor {
+  max-width: 900px;
+  text-align: center;
+  margin: auto;
+  padding: 0 0 20px 0;
+}
+.mapaContenedor .mapa {
+  box-shadow: 3px 3px 10px lightgrey;
+  width: 90%;
+  height: 300px;
+}
+
 @media screen and (min-width: 900px) {
   header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1017,7 +1029,17 @@ footer .footer_contacto .footer_contacto_item p {
     margin-top: 0;
     gap: 10px;
   }
+  .mapaContenedor {
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+    padding: 30px 0;
+  }
+  .mapaContenedor .mapa {
+    width: 100%;
+    height: 300px;
+  }
   .banner_casaGestalt {
-    bottom: 0;
+    bottom: 1;
   }
 }/*# sourceMappingURL=main.css.map */
