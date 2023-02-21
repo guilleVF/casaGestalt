@@ -60,3 +60,11 @@ window.onload = function() {
       // document.getElementById("card_lg3a1").click();
     }
 };
+
+
+window.onload = function() {
+navToggle = document.querySelector('.nav-toggle-label')
+navToggle.addEventListener('click', function() {
+navToggle.classList.toggle('menuCruz')
+}) 
+}

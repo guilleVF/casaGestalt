@@ -92,6 +92,19 @@ h2 {
     }
 }
 
+.menuCruz {
+    & span {
+        transition: all 0.1s;
+        transform: rotate(40deg);
+        &::before {
+            transform: translate(90px);
+        }
+        &::after {
+            transform: translateY(-7px) rotate(100deg);
+        }
+    }
+}
+
 .subtitulado {
     text-decoration: underline;
 }
@@ -518,7 +531,7 @@ footer {
     h2 {
         text-align: center;
         padding: 2em 1em;
-        font-size: 1.8em;
+        font-size: 2em;
         color: $color-hf-strong;
     }
     p {
