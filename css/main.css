@@ -341,7 +341,8 @@ footer .footer_contacto .footer_contacto_item p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(80%);
+  -o-object-position: 50% 70%;
+     object-position: 50% 70%;
 }
 
 .hero1 img {
@@ -381,10 +382,10 @@ footer .footer_contacto .footer_contacto_item p {
   text-align: center;
   margin-top: 70px;
   background-image: url("../img/nubes.webp");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: 70% 0;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 .heroInicio h1 {
@@ -452,8 +453,7 @@ footer .footer_contacto .footer_contacto_item p {
   box-shadow: 5px 5px 10px lightgrey;
 }
 .swiper .swiper-slide .swiper-text {
-  height: 300px;
-  padding: 3em 3em;
+  padding: 2em oem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -462,7 +462,7 @@ footer .footer_contacto .footer_contacto_item p {
 }
 .swiper .swiper-slide .swiper-text h2 {
   padding: 0 0 25px 0;
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-weight: 400;
   color: #3F3F3F;
 }
@@ -623,8 +623,8 @@ footer .footer_contacto .footer_contacto_item p {
 .cards .card .card_text p {
   color: #3F3F3F;
   line-height: 1.2em;
-  font-weight: 500;
-  font-size: 1.3em;
+  font-weight: 600;
+  font-size: 1.2em;
   text-align: center;
   text-shadow: 2px 2px 20px lightgrey;
 }
