@@ -85,6 +85,7 @@ h2 {
   transition: all 0.15s ease;
   padding: 12px 23px;
   font-size: 0.85em;
+  text-align: center;
   background-color: #1d3a5d;
 }
 .btn:hover {
@@ -171,13 +172,17 @@ h2 {
 .whatsapp img {
   z-index: 1000;
   position: fixed;
-  bottom: 135px;
+  bottom: 50px;
   right: 5vw;
-  width: 60px;
+  width: 50px;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: opacity(70%);
+  filter: opacity(55%);
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.whatsapp img:hover {
+  transform: scale(110%);
 }
 
 header {
@@ -188,9 +193,9 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  height: 80px;
+  height: 70px;
   width: 100%;
-  background-color: #346094;
+  background-color: rgba(52, 96, 148, 0.97);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   align-content: center;
 }
@@ -218,20 +223,21 @@ header .nav ul {
   width: 100%;
   top: 100%;
   right: 0%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   padding-top: 35px;
   padding-bottom: 35px;
+  box-shadow: 0 1px 5px lightgrey;
 }
 header .nav ul li {
-  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   margin-right: 15px;
-  color: #1d3a5d;
+  color: #808080;
   font-size: 1.6em;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
   cursor: pointer;
   text-align: end;
+  padding: 10px;
 }
 header .nav .nav-toggle { /*Eliminamos el checkbox*/
   display: none;
@@ -395,9 +401,18 @@ footer .footer_contacto .footer_contacto_item p {
   transform: translate(-50%, -50%);
   font-size: 2.4em;
   font-weight: 600;
-  text-shadow: 2px 2px 10px rgb(56, 56, 56);
+  text-shadow: 1px 1px 10px rgb(56, 56, 56);
   color: #fdf8f5;
   line-height: 35px;
+}
+
+.textBlockInicio {
+  margin: 70px auto;
+  text-align: center;
+}
+.textBlockInicio .btn {
+  margin: 50px 0 20px 0;
+  font-size: 0.8em;
 }
 
 .textBlock {
@@ -408,6 +423,7 @@ footer .footer_contacto .footer_contacto_item p {
 }
 .textBlock .btn {
   margin-top: 5em;
+  text-align: center;
 }
 .textBlock .btn a p {
   font-size: 1.5em;
@@ -453,7 +469,7 @@ footer .footer_contacto .footer_contacto_item p {
   box-shadow: 5px 5px 10px lightgrey;
 }
 .swiper .swiper-slide .swiper-text {
-  padding: 2em oem;
+  padding: 2em 2em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -495,6 +511,7 @@ footer .footer_contacto .footer_contacto_item p {
 }
 
 .ramas {
+  perspective: 200px;
   width: 100%;
 }
 .ramas .banner_ramas {
@@ -855,6 +872,7 @@ footer .footer_contacto .footer_contacto_item p {
     display: none;
   }
   header .nav ul {
+    box-shadow: none;
     opacity: 100;
     grid-column: 2/5;
     display: flex;
@@ -871,8 +889,10 @@ footer .footer_contacto .footer_contacto_item p {
     text-shadow: -0.5px -0.5px 3px lightgrey;
   }
   header .nav ul li {
-    font-size: 1.25em;
-    line-height: 14px;
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 13px;
+    letter-spacing: 1.8px;
     text-align: center;
     color: #fdf8f5;
     font-weight: 500;
@@ -887,26 +907,33 @@ footer .footer_contacto .footer_contacto_item p {
     letter-spacing: 1px;
     line-height: 60px;
     text-align: left;
-    left: 23%;
+    left: 28%;
   }
   .textBlockInicio {
-    max-width: 1200px;
-    margin: 50px auto;
+    margin: 100px auto;
     display: flex;
-    text-align: left;
     justify-content: center;
     align-items: center;
     gap: 7vw;
+    max-width: 1200px;
+  }
+  .textBlockInicio h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 40px 0;
   }
   .textBlockInicio p {
     font-size: 2em;
     margin: 0;
+    text-align: left;
   }
   .textBlockInicio .btn {
+    text-align: center;
     margin: 0;
   }
   .textBlockInicio .btn p {
     margin: 5px;
+    font-size: 1.7em;
   }
   .swiper {
     max-height: 80vh;
@@ -982,10 +1009,16 @@ footer .footer_contacto .footer_contacto_item p {
     -o-object-position: 50% 25%;
        object-position: 50% 25%;
   }
+  .whatsapp img {
+    width: 70px;
+  }
   .textBlock {
     text-align: justify;
     max-width: 800px;
     margin: auto;
+  }
+  .textBlock .btn {
+    text-align: center;
   }
   .textBlock h1 {
     font-size: 3em;
