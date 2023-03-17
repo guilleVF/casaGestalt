@@ -76,10 +76,10 @@ h2 {
 .negrita {
   font-weight: 600;
   color: #808080;
-  font-size: 1em;
 }
 
 .btn {
+  opacity: 90%;
   display: inline-block;
   border-radius: 40px;
   transition: all 0.15s ease;
@@ -90,7 +90,6 @@ h2 {
 }
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 10px 0px lightgrey;
   transform: scale(101.5%);
 }
 .btn:active {
@@ -383,7 +382,7 @@ footer .footer_contacto .footer_contacto_item p {
 
 .heroInicio {
   position: relative;
-  height: 300px;
+  height: 500px;
   box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.25);
   text-align: center;
   margin-top: 70px;
@@ -393,17 +392,35 @@ footer .footer_contacto .footer_contacto_item p {
   background-position: 70% 0;
   background-repeat: no-repeat;
   overflow: hidden;
+  margin-bottom: 70px;
 }
-.heroInicio h1 {
+.heroInicio .heroText {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2.4em;
+  width: 70%;
+}
+.heroInicio .heroText h1 {
+  font-size: 3.1em;
   font-weight: 600;
   text-shadow: 1px 1px 10px rgb(56, 56, 56);
   color: #fdf8f5;
-  line-height: 35px;
+  line-height: 45px;
+  padding-bottom: 30px;
+}
+.heroInicio .heroText p {
+  font-size: 1.5em;
+  color: #3F3F3F;
+  width: 70%;
+  margin: auto;
+}
+.heroInicio .heroText .btn {
+  margin-top: 30px;
+}
+.heroInicio .heroText .btn p {
+  color: #fdf8f5;
+  font-size: 1.2em;
 }
 
 .textBlockInicio {
@@ -461,8 +478,12 @@ footer .footer_contacto .footer_contacto_item p {
   width: 100%;
   margin: 5em 0;
 }
+.swiper .swiper-slide {
+  text-align: center;
+}
 .swiper .swiper-slide img {
-  width: 100%;
+  width: 95%;
+  border-radius: 3px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 20px;
@@ -491,7 +512,7 @@ footer .footer_contacto .footer_contacto_item p {
 }
 .swiper .swiper-slide .swiper-text .fechaInicio {
   font-size: 1.8em;
-  padding: 15px 0;
+  padding: 5px 0;
   font-weight: 600;
   text-decoration: underline;
 }
@@ -511,6 +532,8 @@ footer .footer_contacto .footer_contacto_item p {
 }
 
 .ramas {
+  background-color: #e0e0e0;
+  padding-bottom: 70px;
   perspective: 200px;
   width: 100%;
 }
@@ -526,13 +549,16 @@ footer .footer_contacto .footer_contacto_item p {
 }
 .ramas h2 {
   text-align: center;
-  padding: 2em 1em;
-  font-size: 2em;
+  padding: 2em 0.5em;
+  font-size: 3em;
   color: #1d3a5d;
+  line-height: 30px;
+  font-weight: 700;
 }
 .ramas p {
   text-align: center;
   margin: auto;
+  width: 70%;
 }
 .ramas .ramas_texto {
   max-width: 85%;
@@ -568,7 +594,7 @@ footer .footer_contacto .footer_contacto_item p {
 }
 .ramas .btn {
   display: block;
-  margin: 70px auto;
+  margin: 0 auto;
   width: 300px;
   text-align: center;
   font-size: 0.8em;
@@ -891,8 +917,8 @@ footer .footer_contacto .footer_contacto_item p {
   header .nav ul li {
     margin: 0;
     font-size: 1.2em;
-    line-height: 13px;
-    letter-spacing: 1.8px;
+    line-height: 15px;
+    letter-spacing: 1.1px;
     text-align: center;
     color: #fdf8f5;
     font-weight: 500;
@@ -900,14 +926,36 @@ footer .footer_contacto .footer_contacto_item p {
     max-width: 150px;
   }
   .heroInicio {
-    height: 500px;
+    height: 600px;
   }
-  .heroInicio h1 {
-    font-size: 3.6em;
+  .heroInicio .heroText {
+    position: absolute;
+    top: 40%;
+  }
+  .heroInicio .heroText h1 {
+    font-size: 4.3em;
     letter-spacing: 1px;
-    line-height: 60px;
+    line-height: 65px;
     text-align: left;
-    left: 28%;
+  }
+  .heroInicio .heroText p {
+    text-align: left;
+    line-height: 35px;
+    margin: 0;
+    font-size: 2em;
+  }
+  .heroInicio .heroText .btn {
+    position: absolute;
+    left: 0px;
+    padding: 20px;
+    background-color: #1d3a5d;
+  }
+  .heroInicio .heroText .btn p {
+    text-align: center;
+    margin: auto;
+    font-size: 1.6em;
+    line-height: 20px;
+    width: auto;
   }
   .textBlockInicio {
     margin: 100px auto;
@@ -975,11 +1023,12 @@ footer .footer_contacto .footer_contacto_item p {
     margin: auto;
   }
   .ramas .banner_ramas {
-    max-height: 300px;
+    max-height: 400px;
+    filter: grayscale(10%);
   }
   .ramas h2 {
-    font-size: 2.4em;
-    padding: 3em 1em;
+    font-size: 3.4em;
+    padding: 2em 1em;
   }
   .ramas .ramas_texto {
     max-width: 650px;
@@ -987,6 +1036,12 @@ footer .footer_contacto .footer_contacto_item p {
   }
   .ramas .botones_ramas {
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 30px auto;
+  }
+  .ramas .btn {
+    margin-top: 60px;
   }
   .cards {
     max-width: 1200px;
@@ -1006,8 +1061,9 @@ footer .footer_contacto .footer_contacto_item p {
   }
   .footer_banner img {
     height: 250px;
-    -o-object-position: 50% 25%;
-       object-position: 50% 25%;
+    -o-object-position: 50% 45%;
+       object-position: 50% 45%;
+    filter: blur(2px);
   }
   .whatsapp img {
     width: 70px;
