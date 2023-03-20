@@ -49,10 +49,35 @@ all_card_lg.forEach(function(card_lg) {
     }
 // }
 
-
+// Cambiamos el menu hamburguesa por una cruz
 window.onload = function() {
 navToggle = document.querySelector('.nav-toggle-label')
 navToggle.addEventListener('click', function() {
 navToggle.classList.toggle('menuCruz')
 }) 
+}
+
+// Hacemos que el navbar cambie de color
+
+const navbar = document.querySelector('header');
+const swipercoso = document.querySelector('#swipercoso');
+
+
+function cambiarColor() {
+  const posicion = swipercoso.getBoundingClientRect().top;  
+
+  if (posicion <= 120) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+}
+
+// Si estamos en una pagina que no sea el index, ejecutamos la funcion, de lo contrario aplicamos el fondo al navbar
+let onindex = document.querySelector('.heroInicio')
+
+if (onindex != null ) {
+  window.addEventListener('scroll', cambiarColor);
+} else {
+  navbar.classList.add('scrolled')
 }

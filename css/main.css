@@ -1,4 +1,4 @@
-html, body, div, span, header .nav .nav-toggle-label span::after, header .nav .nav-toggle-label span::before, applet, object, iframe,
+html, body, div, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -73,6 +73,10 @@ h2 {
   color: #3F3F3F;
 }
 
+.blur {
+  filter: blur(2px);
+}
+
 .negrita {
   font-weight: 600;
   color: #808080;
@@ -98,17 +102,6 @@ h2 {
 .btn p {
   color: white;
   font-weight: 600;
-}
-
-.menuCruz span, .menuCruz header .nav .nav-toggle-label span::after, header .nav .nav-toggle-label .menuCruz span::after, .menuCruz header .nav .nav-toggle-label span::before, header .nav .nav-toggle-label .menuCruz span::before {
-  transition: all 0.1s;
-  transform: rotate(40deg);
-}
-.menuCruz span::before, .menuCruz header .nav .nav-toggle-label span::before, header .nav .nav-toggle-label .menuCruz span::before {
-  transform: translate(90px);
-}
-.menuCruz span::after, .menuCruz header .nav .nav-toggle-label span::after, header .nav .nav-toggle-label .menuCruz span::after {
-  transform: translateY(-7px) rotate(100deg);
 }
 
 .subtitulado {
@@ -194,9 +187,9 @@ header {
   align-items: center;
   height: 70px;
   width: 100%;
-  background-color: rgba(52, 96, 148, 0.97);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  background-color: rgba(74, 118, 172, 0);
   align-content: center;
+  transition: all 0.5s ease;
 }
 header .logo {
   grid-column: 2/3;
@@ -274,20 +267,37 @@ header .nav .nav-toggle-label span::after {
   top: 7px;
 }
 
+.scrolled {
+  background-color: #53799e;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  opacity: 98%;
+}
+
+.menuCruz span, .menuCruz header .nav .nav-toggle-label span::before, header .nav .nav-toggle-label .menuCruz span::before, .menuCruz header .nav .nav-toggle-label span::after, header .nav .nav-toggle-label .menuCruz span::after {
+  transition: all 0.1s;
+  transform: rotate(40deg);
+}
+.menuCruz span::before, .menuCruz header .nav .nav-toggle-label span::before, header .nav .nav-toggle-label .menuCruz span::before {
+  transform: translate(90px);
+}
+.menuCruz span::after, .menuCruz header .nav .nav-toggle-label span::after, header .nav .nav-toggle-label .menuCruz span::after {
+  transform: translateY(-7px) rotate(100deg);
+}
+
 .footer_banner img {
+  margin-bottom: -2px;
   height: 130px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  -o-object-position: 50% 40%;
+     object-position: 50% 40%;
   box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.25);
-  filter: contrast(110%);
-  filter: brightness(90%);
-  filter: saturate(80%);
+  filter: brightness(89%);
 }
 
 footer {
+  background-color: #999999;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -300,6 +310,9 @@ footer i {
 footer p {
   font-size: 1.2em;
 }
+footer a {
+  color: #fdf8f5;
+}
 footer .footer_redes {
   display: flex;
   flex-direction: row;
@@ -307,8 +320,8 @@ footer .footer_redes {
   align-items: center;
 }
 footer .footer_redes p {
-  font-size: 1.4em;
-  color: #3F3F3F;
+  font-size: 1.6em;
+  color: #fdf8f5;
   font-weight: 800;
 }
 footer .footer_redes i {
@@ -330,8 +343,8 @@ footer .footer_contacto .footer_contacto_item img {
   height: 28px;
 }
 footer .footer_contacto .footer_contacto_item p {
-  color: #3F3F3F;
-  font-size: 1.3em;
+  color: #fdf8f5;
+  font-size: 1.4em;
 }
 
 .hero {
@@ -385,7 +398,6 @@ footer .footer_contacto .footer_contacto_item p {
   height: 500px;
   box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.25);
   text-align: center;
-  margin-top: 70px;
   background-image: url("../img/nubes.webp");
   background-size: cover;
   background-attachment: fixed;
@@ -448,7 +460,7 @@ footer .footer_contacto .footer_contacto_item p {
 .textBlock p {
   padding: 5px 0 5px 0;
 }
-.textBlock p span, .textBlock p header .nav .nav-toggle-label span::before, header .nav .nav-toggle-label .textBlock p span::before, .textBlock p header .nav .nav-toggle-label span::after, header .nav .nav-toggle-label .textBlock p span::after {
+.textBlock p .color_resaltado {
   color: #FFC27A;
   font-size: 1.7rem;
 }
@@ -462,8 +474,9 @@ footer .footer_contacto .footer_contacto_item p {
   text-align: center;
 }
 .textBlock .subtitulo {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.9em;
+  text-align: center;
 }
 .textBlock ul {
   padding: 0 30px;
@@ -921,7 +934,7 @@ footer .footer_contacto .footer_contacto_item p {
     letter-spacing: 1.1px;
     text-align: center;
     color: #fdf8f5;
-    font-weight: 500;
+    font-weight: 400;
     margin-left: 0;
     max-width: 150px;
   }
@@ -1061,16 +1074,15 @@ footer .footer_contacto .footer_contacto_item p {
   }
   .footer_banner img {
     height: 250px;
-    -o-object-position: 50% 45%;
-       object-position: 50% 45%;
-    filter: blur(2px);
+    -o-object-position: 50% 41%;
+       object-position: 50% 41%;
   }
   .whatsapp img {
     width: 70px;
   }
   .textBlock {
     text-align: justify;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
   }
   .textBlock .btn {
@@ -1079,10 +1091,11 @@ footer .footer_contacto .footer_contacto_item p {
   .textBlock h1 {
     font-size: 3em;
     text-align: center;
-    margin: 40px 0;
+    margin: 40px 0 60px 0;
   }
   .textBlock p {
-    margin: 15px 0;
+    max-width: 80%;
+    margin: 15px auto;
   }
   .col3 {
     margin: 0 -8vw;
@@ -1090,7 +1103,7 @@ footer .footer_contacto .footer_contacto_item p {
   }
   .col3 p {
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.5em;
     line-height: 30px;
     letter-spacing: 0.9px;
   }

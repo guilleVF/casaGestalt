@@ -1,5 +1,5 @@
 
-html, body, div, span, applet, object, iframe,
+html, body, div, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -65,6 +65,9 @@ h2 {
     font-weight: 800;
     color: $color-text-primary;
 }
+.blur {
+    filter: blur(2px);
+}
 .negrita {
     font-weight: 600;
     color: $color-text-secondary;
@@ -93,18 +96,6 @@ h2 {
     }
 }
 
-.menuCruz {
-    & span {
-        transition: all 0.1s;
-        transform: rotate(40deg);
-        &::before {
-            transform: translate(90px);
-        }
-        &::after {
-            transform: translateY(-7px) rotate(100deg);
-        }
-    }
-}
 
 .subtitulado {
     text-decoration: underline;
@@ -192,10 +183,9 @@ header {
     align-items: center;
     height: 70px;
     width: 100%;
-    background-color: rgba(#346094, 0.97);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    background-color: rgba(#4a76ac, 0);
     align-content: center;
-
+    transition: all 0.5s ease;
     .logo {
         grid-column: 2/3;
         justify-self: center;
@@ -281,24 +271,43 @@ header {
     }
 }
 
+.scrolled {
+    background-color: #53799e;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    opacity: 98%;
+}
+
+.menuCruz {
+    & span {
+        transition: all 0.1s;
+        transform: rotate(40deg);
+        &::before {
+            transform: translate(90px);
+        }
+        &::after {
+            transform: translateY(-7px) rotate(100deg);
+        }
+    }
+}
+
 .footer_banner {
     img {
+        margin-bottom: -2px;
         height: 130px;
         width: 100%;
         object-fit: cover;
-        object-position: 50% 50%;
+        object-position: 50% 40%;
         box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.25);
-        filter:contrast(110%);
-        filter:brightness(90%);
-        filter: saturate(80%);
+        filter:brightness(89%)
     }
 }
 
 footer {
+    // background-color: #373e47;
+    background-color: #999999;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    // background-color: $color-accent;
     padding: 30px;
     gap: 30px;
     i {
@@ -307,14 +316,17 @@ footer {
     p {
         font-size: 1.2em;
     }
+    a {
+        color: $color-background;
+    }
     .footer_redes {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         p {
-            font-size: 1.4em;   
-            color: $color-text-primary;
+            font-size: 1.6em;   
+            color: $color-background;
             font-weight: 800;  
         }
         i {
@@ -335,8 +347,8 @@ footer {
                 height: 28px;
             }
             p {
-                color: $color-text-primary;
-                font-size: 1.3em;
+                color: $color-background;
+                font-size: 1.4em;
             }
         }
     }
@@ -390,7 +402,7 @@ footer {
     height: 500px;
     box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.25);
     text-align: center;
-    margin-top: 70px;
+    // margin-top: 70px;
     background-image: url('../img/nubes.webp');
     background-size:cover;
     background-attachment: fixed;
@@ -456,7 +468,7 @@ footer {
     }
     p {
         padding: 5px 0 5px 0;
-        span {
+        .color_resaltado {
             color: $color-accent;
             font-size: 1.7rem;
         }
@@ -471,8 +483,9 @@ footer {
         text-align: center;
     }
     .subtitulo {
-        font-weight: 300;
+        font-weight: 500;
         font-size: 1.9em;
+        text-align: center;
     }
     ul {
         padding: 0 30px;
@@ -964,7 +977,7 @@ footer {
                     text-align: center;
                     color: $color-background;
                     // color: $color-text-primary;
-                    font-weight: 500;
+                    font-weight: 400;
                     margin-left: 0;
                     max-width: 150px;
                     // height: 100%;
@@ -1118,8 +1131,8 @@ footer {
     .footer_banner {
         img {
             height: 250px;
-            object-position: 50% 45%;
-            filter: blur(2px);
+            object-position: 50% 41%;
+            // filter: blur(2px);
         }
     }
 
@@ -1138,13 +1151,14 @@ footer {
         h1 {
             font-size: 3em;
             text-align: center;
-            margin: 40px 0;
+            margin: 40px 0 60px 0;
         }
         p {
-            margin: 15px 0;
+            max-width: 80%;
+            margin: 15px auto;
         }
         text-align: justify;    
-        max-width: 800px;
+        max-width: 900px;
         margin: auto;
     }
 
@@ -1156,7 +1170,7 @@ footer {
         // overflow: visible;
         p {
             text-align: center;
-            font-size: 1.7em;
+            font-size: 1.5em;
             line-height: 30px;
             letter-spacing: 0.9px;
         }
