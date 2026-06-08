@@ -341,7 +341,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--azul-900); line-heig
 /* Hero páginas internas */
 .page-hero { height: 280px; overflow: hidden; box-shadow: var(--sh-md); }
 .page-hero img { width: 100%; height: 100%; object-fit: cover; }
-.hero1 img { object-position: 50% 75%; }
+.hero1 img { object-position: 50% 50%; }
 .hero2 img { object-position: 50% 18%; }
 .hero7 img { object-position: 50% 36%; }
 
