@@ -291,14 +291,14 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--azul-900); line-heig
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    padding-right: 2rem;
+    padding-right: 20rem;
     border-right: 1px solid rgba(255,255,255,.12);
   }
   .footer-contacto {
     flex: 1;
-    padding-left: 2rem;
+    padding-left: 20rem;
   }
 }
 
