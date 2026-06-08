@@ -16,14 +16,16 @@
   }
 
   /* ── Nav items ─────────────────────────────────────────────── */
+  const p = (file) => inPages ? file : `./pages/${file}`;
+
   const navItems = [
-    { label: 'Somos casagestalt',                    href: `${root}pages/1.html` },
-    { label: 'Quienes nos eligen',                   href: `${root}pages/2.html` },
-    { label: 'Opciones de formación',                href: `${root}pages/3.html` },
-    { label: 'Soluciones para organizaciones',       href: `${root}pages/4.html` },
-    { label: 'Testimonios',                          href: `${root}pages/5.html` },
-    { label: 'Nuestro equipo',                       href: `${root}pages/6.html` },
-    { label: 'Conversemos sobre tus necesidades',    href: `${root}pages/7.html` },
+    { label: 'Somos casagestalt',                    href: p('1.html') },
+    { label: 'Quienes nos eligen',                   href: p('2.html') },
+    { label: 'Opciones de formación',                href: p('3.html') },
+    { label: 'Soluciones para organizaciones',       href: p('4.html') },
+    { label: 'Testimonios',                          href: p('5.html') },
+    { label: 'Nuestro equipo',                       href: p('6.html') },
+    { label: 'Conversemos sobre tus necesidades',    href: p('7.html') },
   ];
 
   const ctaHref = 'https://forms.gle/KLwi8UTeVCCmMYkWA';

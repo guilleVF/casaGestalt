@@ -308,3 +308,38 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--azul-900); line-heig
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .js .reveal { opacity: 1; }
 }
+
+/* =========================================================
+   PÁGINAS INTERNAS
+   ========================================================= */
+
+/* Hero páginas internas */
+.page-hero { height: 280px; overflow: hidden; box-shadow: var(--sh-md); }
+.page-hero img { width: 100%; height: 100%; object-fit: cover; }
+.hero1 img { object-position: 50% 65%; }
+.hero2 img { object-position: 50% 18%; }
+.hero7 img { object-position: 50% 36%; }
+
+/* Text block páginas internas */
+.text-block { max-width: 800px; margin: 0 auto; padding: 3.5rem 1.375rem; text-align: center; }
+.text-block h1 { font-size: clamp(1.5rem, 4vw, 2.25rem); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 1.5rem; }
+.text-block p { font-size: 1.0625rem; color: var(--texto-sec); line-height: 1.7; }
+.text-block p + p { margin-top: 1rem; }
+.text-block .highlight { color: var(--azul-500); font-weight: 600; }
+.text-block .subtitulo { font-size: 1.2rem; font-weight: 500; color: var(--texto-sec); }
+
+/* Empresas */
+.empresas-grid { display: grid; gap: 2rem; padding: 0 1.375rem 4rem; }
+.lista-empresas { font-weight: 600; font-size: 0.9rem; line-height: 1.8; color: var(--texto-sec); }
+
+/* Testimonios */
+.testimonios { max-width: 700px; margin: 0 auto; padding: 0 1.375rem 4rem; display: flex; flex-direction: column; gap: 1.5rem; }
+blockquote.testimonio { background: var(--surface); border-left: 4px solid var(--azul-500); border-radius: var(--r-md); padding: 1.5rem 1.75rem; box-shadow: var(--sh-sm); }
+blockquote.testimonio p { font-size: 1rem; color: var(--texto-sec); line-height: 1.7; font-style: italic; }
+blockquote.testimonio cite { display: block; margin-top: 1rem; font-style: normal; font-family: var(--font-display); font-weight: 600; font-size: 0.875rem; color: var(--azul-700); }
+
+@media (min-width: 900px) {
+  .page-hero { height: 380px; }
+  .empresas-grid { grid-template-columns: repeat(3, 1fr); padding: 0 2rem 5rem; }
+  .text-block { padding: 5rem 2rem; }
+}
