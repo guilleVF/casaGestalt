@@ -93,6 +93,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--azul-900); line-heig
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
 .logo img { max-height: 32px; width: auto; }
 .menu { display: none; }
+.nav-menu { display: none; }
 .nav-cta { display: none; }
 .burger {
   display: flex; flex-direction: column; gap: 5px; padding: 8px;
@@ -270,6 +271,9 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--azul-900); line-heig
   .menu { display: flex; align-items: center; gap: 26px; }
   .menu a { font-family: var(--font-display); font-weight: 500; font-size: 14px; color: #cdd9e6; transition: color .2s ease; }
   .menu a:hover { color: #fff; }
+  .nav-menu { display: flex; align-items: center; gap: 26px; }
+  .nav-menu a { font-family: var(--font-display); font-weight: 500; font-size: 14px; color: #cdd9e6; transition: color .2s ease; }
+  .nav-menu a:hover { color: #fff; }
   .nav-cta { display: inline-flex; }
   .nav-cta { background: var(--ambar); color: var(--ambar-700); }
   .nav-cta:hover { background: #ffd49e; box-shadow: 0 8px 22px rgba(255,194,122,.35); }
