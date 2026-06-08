@@ -263,20 +263,10 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--azul-900); line-heig
 .whatsapp-float i { color: #fff; font-size: 30px; }
 
 /* =========================================================
-   RESPONSIVE — Desktop
+   RESPONSIVE — Desktop layout (900px+)
    ========================================================= */
 @media (min-width: 900px) {
   .container { padding: 0 32px; }
-  .burger { display: none; }
-  .menu { display: flex; align-items: center; gap: 26px; }
-  .menu a { font-family: var(--font-display); font-weight: 500; font-size: 14px; color: #cdd9e6; transition: color .2s ease; }
-  .menu a:hover { color: #fff; }
-  .nav-menu { display: flex; align-items: center; gap: 26px; }
-  .nav-menu a { font-family: var(--font-display); font-weight: 500; font-size: 14px; color: #cdd9e6; transition: color .2s ease; }
-  .nav-menu a:hover { color: #fff; }
-  .nav-cta { display: inline-flex; }
-  .nav-cta { background: var(--ambar); color: var(--ambar-700); }
-  .nav-cta:hover { background: #ffd49e; box-shadow: 0 8px 22px rgba(255,194,122,.35); }
 
   .hero { padding: 70px 0 80px; }
   .hero-grid { grid-template-columns: 1.05fr .95fr; align-items: center; gap: 56px; }
@@ -293,6 +283,20 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--azul-900); line-heig
 
   .footer-grid { grid-template-columns: 1fr 1fr; align-items: start; }
   .footer-redes { border-right: 1px solid rgba(255,255,255,.12); }
+}
+
+/* Nav desktop — breakpoint más alto para que 6 items quepan en una línea */
+@media (min-width: 1024px) {
+  .burger { display: none; }
+  .menu { display: flex; align-items: center; gap: 16px; }
+  .menu a { font-family: var(--font-display); font-weight: 500; font-size: 13px; color: #cdd9e6; white-space: nowrap; transition: color .2s ease; }
+  .menu a:hover { color: #fff; }
+  .nav-menu { display: flex; align-items: center; gap: 16px; }
+  .nav-menu a { font-family: var(--font-display); font-weight: 500; font-size: 13px; color: #cdd9e6; white-space: nowrap; transition: color .2s ease; }
+  .nav-menu a:hover { color: #fff; }
+  .nav-cta { display: inline-flex; font-size: 13px; padding: 10px 14px; white-space: nowrap; }
+  .nav-cta { background: var(--ambar); color: var(--ambar-700); }
+  .nav-cta:hover { background: #ffd49e; box-shadow: 0 8px 22px rgba(255,194,122,.35); }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {

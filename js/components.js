@@ -24,13 +24,13 @@
     { short: 'Formación',           label: 'Opciones de formación',             href: p('3.html') },
     { short: 'Organizaciones',      label: 'Soluciones para organizaciones',    href: p('4.html') },
     { short: 'Testimonios',         label: 'Testimonios',                       href: p('5.html') },
-    { short: 'Contacto',            label: 'Conversemos sobre tus necesidades', href: p('6.html') },
+    { short: 'Conversemos',         label: 'Conversemos sobre tus necesidades', href: p('6.html'), mobileOnly: true },
     { short: 'Nuestro equipo',      label: 'Nuestro equipo',                    href: p('7.html') },
   ];
 
   const ctaHref = 'https://forms.gle/KLwi8UTeVCCmMYkWA';
 
-  const desktopLinks = navItems.map(n =>
+  const desktopLinks = navItems.filter(n => !n.mobileOnly).map(n =>
     `<a href="${n.href}">${n.short}</a>`
   ).join('');
 
