@@ -293,12 +293,12 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--azul-900); line-heig
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    padding-right: 20rem;
+    padding-right: 8rem;
     border-right: 1px solid rgba(255,255,255,.12);
   }
   .footer-contacto {
     flex: 1;
-    padding-left: 20rem;
+    padding-left: 8rem;
   }
 }
 
