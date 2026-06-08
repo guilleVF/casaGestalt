@@ -24,8 +24,8 @@
     { label: 'Opciones de formación',                href: p('3.html') },
     { label: 'Soluciones para organizaciones',       href: p('4.html') },
     { label: 'Testimonios',                          href: p('5.html') },
-    { label: 'Nuestro equipo',                       href: p('6.html') },
-    { label: 'Conversemos sobre tus necesidades',    href: p('7.html') },
+    { label: 'Conversemos sobre tus necesidades',    href: p('6.html') },
+    { label: 'Nuestro equipo',                       href: p('7.html') },
   ];
 
   const ctaHref = 'https://forms.gle/KLwi8UTeVCCmMYkWA';

@@ -343,3 +343,52 @@ blockquote.testimonio cite { display: block; margin-top: 1rem; font-style: norma
   .empresas-grid { grid-template-columns: repeat(3, 1fr); padding: 0 2rem 5rem; }
   .text-block { padding: 5rem 2rem; }
 }
+
+/* ─── PÁGINAS 3 & 4 ─────────────────────────────────────────────── */
+.hero3 img { object-position: 50% 55%; }
+.hero4 img { object-position: 50% 22%; }
+
+.link-org { text-align: right; padding: 0 1.375rem 1.5rem; max-width: 800px; margin: -2.5rem auto 0; }
+.link-org a { font-size: 15px; color: var(--azul-500); text-decoration: underline; }
+
+/* Ramas con imagen encima */
+.ramas-formacion { display: grid; grid-template-columns: 1fr; gap: 24px; max-width: 960px; margin: 0 auto; padding: 0 1.375rem 3rem; }
+.rama-col { display: flex; flex-direction: column; }
+.rama-col > img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--r-md) var(--r-md) 0 0; display: block; }
+.rama-col > .rama { border-radius: 0 0 var(--r-md) var(--r-md); flex: 1; }
+
+.esquema-wrap { text-align: center; padding: 0 1.375rem 3rem; }
+.esquema-wrap img { max-width: 920px; width: 100%; }
+
+/* ─── PÁGINA 4: SERVICIOS ─────────────────────────────────────── */
+.servicios { background: var(--azul-50); padding: 3rem 0; margin-top: 1rem; }
+.servicios h2 { font-family: var(--font-display); font-size: clamp(18px,2.5vw,22px); font-weight: 700; color: var(--azul-900); margin-bottom: 16px; }
+.servicios > .container > p { font-size: 1.0625rem; color: var(--texto-sec); line-height: 1.7; margin-bottom: 1rem; }
+.servicios-lista { list-style: none; padding: 0; margin: 0 0 28px; }
+.servicios-lista li { padding: 10px 0; border-bottom: 1px solid var(--borde); font-size: 16px; color: var(--texto-sec); }
+.servicios-lista li::before { content: '—'; margin-right: 8px; color: var(--azul-500); }
+.descargables { margin: 0 0 32px; }
+.descargables h3 { font-family: var(--font-display); font-weight: 600; font-size: 16px; color: var(--azul-900); margin-bottom: 12px; }
+.descargables a { display: inline-flex; align-items: center; gap: 8px; color: var(--azul-500); text-decoration: underline; font-size: 15px; margin: 0 16px 8px 0; }
+.servicios-cta { text-align: center; padding-top: 12px; }
+
+/* ─── PÁGINA 6: CONTACTO ─────────────────────────────────────── */
+.contacto-page { padding: 4rem 1.375rem 0; max-width: 800px; margin: 0 auto; }
+.contacto-page h1 { font-family: var(--font-display); font-size: clamp(1.5rem,4vw,2.25rem); font-weight: 700; color: var(--azul-900); text-align: center; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 1rem; }
+.contacto-page .subtitulo { text-align: center; color: var(--texto-sec); font-size: 1.0625rem; margin-bottom: 2.5rem; }
+.contacto-cards { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.contacto-card { display: flex; align-items: center; gap: 20px; background: var(--surface); border-radius: var(--r-lg); box-shadow: var(--sh-sm); padding: 22px 26px; transition: box-shadow .2s ease, transform .2s ease; text-decoration: none; color: inherit; }
+.contacto-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); }
+.contacto-card .cc-icon { width: 52px; height: 52px; flex: none; border-radius: var(--r-md); background: var(--azul-50); display: grid; place-items: center; font-size: 22px; color: var(--azul-500); }
+.contacto-card .cc-text strong { display: block; font-family: var(--font-display); font-size: 15px; font-weight: 600; color: var(--azul-900); margin-bottom: 2px; }
+.contacto-card .cc-text span { font-size: 14px; color: var(--texto-sec); }
+.mapa-wrap { padding: 3rem 1.375rem 4rem; }
+.mapa-wrap iframe { width: 100%; height: 360px; border: 0; border-radius: var(--r-lg); display: block; }
+
+@media (min-width: 768px) {
+  .ramas-formacion { grid-template-columns: repeat(3, 1fr); padding: 0 2rem 4rem; }
+  .esquema-wrap { padding: 0 2rem 4rem; }
+  .contacto-page { padding: 5rem 2rem 0; }
+  .contacto-cards { grid-template-columns: 1fr 1fr; }
+  .mapa-wrap { padding: 3rem 2rem 5rem; }
+}
