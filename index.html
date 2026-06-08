@@ -1,324 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <script>document.documentElement.classList.add('js');</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Desde hace más de 20 años desarrollamos el área organizacional gestáltica en Uruguay. Apoyamos procesos de transformación humana y organizacional, a través de la formación, consultoría, coaching personal, directivo y grupal.">
-    <meta name="keywords" content="casa gestalt uruguay montevideo terapia gestaltica curso capacitacion herramientas desarrollo humano">
+  <meta charset="UTF-8">
+  <script>document.documentElement.classList.add('js');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Desde hace más de 20 años desarrollamos el área organizacional gestáltica en Uruguay. Apoyamos procesos de transformación humana y organizacional, a través de la formación, consultoría, coaching personal, directivo y grupal.">
+  <meta name="keywords" content="casa gestalt uruguay montevideo terapia gestaltica curso capacitacion herramientas desarrollo humano">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/686b258f57.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./css/casagestalt.css?v=1.0">
-
-    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
-    <title>Casa Gestalt Uruguay | Desarrollo personal, profesional y organizacional</title>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-18WJKMXTNQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-18WJKMXTNQ');
-    </script>
+  <script src="https://kit.fontawesome.com/686b258f57.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/output.css">
+  <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+  <title>Casa Gestalt Uruguay | Desarrollo personal, profesional y organizacional</title>
 </head>
 
 <body>
 
-    <!-- ===================== HEADER ===================== -->
-    <header class="site-header" id="site-header">
-        <div class="container nav-inner">
-            <a class="logo" href="./index.html"><img src="./img/logo.png" alt="Casa Gestalt"></a>
+  <div id="site-header"></div>
 
-            <nav class="menu">
-                <a href="./pages/1.html">Somos casagestalt</a>
-                <a href="./pages/2.html">Quienes nos eligen</a>
-                <a href="./pages/3.html">Formación</a>
-                <a href="./pages/4.html">Organizaciones</a>
-                <a href="./pages/5.html">Testimonios</a>
-                <a href="./pages/7.html">Equipo</a>
-            </nav>
-
-            <a class="btn btn-primary nav-cta" href="https://forms.gle/KLwi8UTeVCCmMYkWA" target="_blank">Hacé tu consulta</a>
-
-            <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
+  <!-- ══════════════════════════ HERO ══════════════════════════ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow">+20 años de trayectoria</span>
+        <h1>Desarrollo <em>personal, profesional</em> y organizacional</h1>
+        <p class="lead">Más de 20 años acompañando el desarrollo de personas y organizaciones en Uruguay, a través de la formación, la consultoría y el coaching.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://forms.gle/KLwi8UTeVCCmMYkWA" target="_blank" rel="noopener">Hacenos tu consulta</a>
+          <a class="btn btn-ghost" href="./pages/4.html">Soluciones para organizaciones</a>
         </div>
-    </header>
-
-    <!-- Drawer mobile -->
-    <div class="mobile-menu" id="mobile-menu">
-        <a href="./pages/1.html">Somos casagestalt</a>
-        <a href="./pages/2.html">Quienes nos eligen</a>
-        <a href="./pages/3.html">Opciones de formación</a>
-        <a href="./pages/4.html">Soluciones para organizaciones</a>
-        <a href="./pages/5.html">Testimonios</a>
-        <a href="./pages/7.html">Nuestro equipo</a>
-        <a href="./pages/6.html">Conversemos sobre tus necesidades</a>
-        <a class="btn btn-primary" href="https://forms.gle/KLwi8UTeVCCmMYkWA" target="_blank">Hacé tu consulta</a>
+      </div>
+      <div class="hero-media">
+        <img src="./img/inicio/card2.webp" alt="Grupo de personas en una actividad de Casa Gestalt">
+        <div class="hero-stat">
+          <b>+20</b>
+          <span>años acompañando<br>personas y organizaciones</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- ===================== HERO ===================== -->
-    <section class="hero">
-        <div class="container hero-grid">
-            <div class="hero-text">
-                <span class="eyebrow">+20 años de trayectoria</span>
-                <h1>Desarrollo <b>personal, profesional</b> y organizacional</h1>
-                <p class="lead">Más de 20 años acompañando el desarrollo de personas y organizaciones en Uruguay, a través de la formación, la consultoría y el coaching.</p>
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="https://forms.gle/KLwi8UTeVCCmMYkWA" target="_blank">Hacenos tu consulta</a>
-                    <a class="btn btn-ghost" href="./pages/4.html">Soluciones para organizaciones</a>
-                </div>
-            </div>
-            <div class="hero-media">
-                <div class="frame"><img src="./img/inicio/card2.webp" alt="Grupo de personas en una actividad de Casa Gestalt"></div>
-                <div class="hero-stat">
-                    <b>+20</b>
-                    <span>años acompañando<br>personas y organizaciones</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== CURSOS DESTACADOS (swiper) ===================== -->
-    <section class="cursos section">
-        <div class="container">
-            <div class="section-head">
-                <span class="eyebrow">Próximos inicios</span>
-                <h2>Formaciones destacadas</h2>
-            </div>
-
-            <div class="swiper" id="swipercoso">
-                <div class="swiper-wrapper">
-
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <div class="curso-slide">
-                            <div class="curso-media"><img src="./img/inicio/mayo1.jpg" alt="Gestalt para trabajar con grupos y equipos" loading="lazy"></div>
-                            <div class="curso-body">
-                                <h3>Gestalt para trabajar con grupos y equipos</h3>
-                                <p class="curso-desc">Con base en la metodología gestáltica, te ofrecemos herramientas para atender y entender la realidad de los grupos y equipos, e intervenir de manera de mejorar su desempeño, favorecer un clima de respeto y confianza, potenciando así el trabajo en equipo.</p>
-                                <div class="curso-oferta">
-                                    <div class="oferta-item">
-                                        <p class="tit">Gestalt para liderar equipos</p>
-                                        <p class="det">Curso presencial. Cinco encuentros semanales de 18.00 a 22.00. Próximo inicio: lunes 9 de noviembre.</p>
-                                    </div>
-                                    <div class="oferta-item">
-                                        <p class="tit">Introducción a Gestalt de Equipos</p>
-                                        <p class="det">Curso en línea. Cuatro encuentros vía Zoom. Del 8 al 17 de setiembre, martes y jueves, 19.00 a 22.00 hs.</p>
-                                    </div>
-                                </div>
-                                <a class="btn btn-primary" href="./pages/3a.html?myParam=4">Conocer más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <div class="curso-slide">
-                            <div class="curso-media"><img src="./img/inicio/mayo2.jpg" alt="Gestalt coaching" loading="lazy"></div>
-                            <div class="curso-body">
-                                <h3>Ayudá a otras personas mediante el gestalt coaching</h3>
-                                <p class="curso-desc">El Gestalt coaching es una herramienta útil para quienes practican la ayuda, mediante la integración de una perspectiva centrada en las personas, que valora sus recursos y promueve su desarrollo pleno, favoreciendo que asuman consciencia y responsabilidad por sus elecciones.</p>
-                                <div class="curso-oferta">
-                                    <div class="oferta-item">
-                                        <p class="tit">Habilidades de Gestalt Coaching — En línea</p>
-                                        <p class="det">Curso en línea. Cuatro encuentros vía Zoom, de 19.00 a 22.00. Martes y jueves. Próximo inicio: martes 4 de agosto.</p>
-                                    </div>
-                                    <div class="oferta-item">
-                                        <p class="tit">Habilidades de Gestalt Coaching — Presencial</p>
-                                        <p class="det">Curso presencial. 5 encuentros semanales. Próximo inicio: martes 10 de noviembre.</p>
-                                    </div>
-                                </div>
-                                <a class="btn btn-primary" href="./pages/3c.html">Conocer más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        <div class="curso-slide">
-                            <div class="curso-media"><img src="./img/casagestalt2.webp" alt="Comunicación que transforma" loading="lazy"></div>
-                            <div class="curso-body">
-                                <h3>Comunicación que transforma</h3>
-                                <p class="curso-desc">Aportamos herramientas concretas para utilizar especialmente en aquellos espacios en los que es importante cuidar las relaciones y construir un clima de respeto y cooperación. Es un método sencillo, que es posible aplicar inmediatamente en todos los ámbitos (familiar, social y laboral).</p>
-                                <div class="curso-oferta">
-                                    <div class="oferta-item">
-                                        <p class="tit">Comunicación que Transforma</p>
-                                        <p class="det">Presencial: 4 encuentros. Inicia 20 de julio. Último inicio del año: martes 6 de octubre.</p>
-                                    </div>
-                                </div>
-                                <a class="btn btn-primary" href="./pages/3b.html?myParam=2">Conocer más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== FORMARSE EN CASAGESTALT ===================== -->
-    <section class="formarse section reveal">
-        <div class="container">
-            <img class="banner" src="./img/inicio/banner_ramas.jpg" alt="Puente en un bosque" loading="lazy">
-
-            <div class="section-head">
-                <h2>Formarse en casagestalt</h2>
-            </div>
-            <div class="texto">
-                <p>La gestalt es un enfoque dinámico, holístico y creativo, que se apoya en la aceptación del pasado, la construcción de un nuevo futuro y sobre todo en el contacto pleno con el presente. Aporta profundidad, congruencia y eficacia a los procesos de cambio.</p>
-                <p>Una propuesta metodológica para el desarrollo personal y profesional, que pone foco en la trasmisión y práctica de herramientas concretas, a través de un aprendizaje participativo y vivencial.</p>
-            </div>
-
-            <div class="ramas-grid">
-                <a class="rama rama-1" href="./pages/3a.html">
-                    <span class="ic"><i class="fa-solid fa-users"></i></span>
-                    <span class="label">GRUPOS</span>
-                    <i class="fa-solid fa-arrow-right arrow"></i>
-                </a>
-                <a class="rama rama-2" href="./pages/3b.html">
-                    <span class="ic"><i class="fa-solid fa-comments"></i></span>
-                    <span class="label">COMUNICACIÓN</span>
-                    <i class="fa-solid fa-arrow-right arrow"></i>
-                </a>
-                <a class="rama rama-3" href="./pages/3c.html">
-                    <span class="ic"><i class="fa-solid fa-seedling"></i></span>
-                    <span class="label">COACHING</span>
-                    <i class="fa-solid fa-arrow-right arrow"></i>
-                </a>
-            </div>
-
-            <div class="cta-wrap">
-                <a class="btn btn-accent" href="https://forms.gle/KLwi8UTeVCCmMYkWA" target="_blank">Vení a una charla informativa</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== CARDS DE NAVEGACIÓN ===================== -->
-    <section class="nav-cards section">
-        <div class="container cards-grid">
-            <a class="ncard" href="./pages/1.html">
-                <img src="./img/inicio/card1.webp" alt="Una flor" loading="lazy">
-                <div class="ncard-text"><p>Somos casagestalt</p><i class="fa-solid fa-arrow-right"></i></div>
-            </a>
-            <a class="ncard" href="./pages/2.html">
-                <img src="./img/inicio/card2.webp" alt="Grupo de personas" loading="lazy">
-                <div class="ncard-text"><p>Quienes nos eligen</p><i class="fa-solid fa-arrow-right"></i></div>
-            </a>
-            <a class="ncard" href="./pages/3.html">
-                <img src="./img/inicio/card3.webp" alt="Puente en bosque" loading="lazy">
-                <div class="ncard-text"><p>Opciones de formación</p><i class="fa-solid fa-arrow-right"></i></div>
-            </a>
-            <a class="ncard" href="./pages/4.html">
-                <img src="./img/inicio/card4.webp" alt="Pájaros volando al atardecer" loading="lazy">
-                <div class="ncard-text"><p>Soluciones para organizaciones</p><i class="fa-solid fa-arrow-right"></i></div>
-            </a>
-            <a class="ncard" href="./pages/5.html">
-                <img src="./img/inicio/card5.webp" alt="Mesa de té" loading="lazy">
-                <div class="ncard-text"><p>Testimonios de nuestros participantes</p><i class="fa-solid fa-arrow-right"></i></div>
-            </a>
-            <a class="ncard" href="./pages/6.html">
-                <img src="./img/inicio/card6.webp" alt="Grupo de personas reunidas" loading="lazy">
-                <div class="ncard-text"><p>Conversemos sobre tus necesidades</p><i class="fa-solid fa-arrow-right"></i></div>
-            </a>
-        </div>
-    </section>
-
-    <!-- ===================== FOOTER ===================== -->
-    <div class="footer-banner">
-        <img src="./img/inicio/footer.webp" alt="Grupo de personas" loading="lazy">
+  <!-- ══════════════════════ CURSOS DESTACADOS ═════════════════ -->
+  <section class="cursos reveal">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Próximos inicios</span>
+        <h2>Formaciones destacadas</h2>
+      </div>
     </div>
+    <div class="cursos-track">
 
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-redes">
-                <h3>Seguinos en redes</h3>
-                <div class="redes-iconos">
-                    <a href="https://www.facebook.com/CasaGestalt/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.instagram.com/casagestalt_mvd" target="_blank" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://uy.linkedin.com/company/casagestalt" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-contacto">
-                <div class="contacto-item">
-                    <i class="fa-solid fa-comment"></i>
-                    <a href="https://forms.gle/KLwi8UTeVCCmMYkWA" target="_blank">Inscribite para una charla informativa</a>
-                </div>
-                <div class="contacto-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>Escribinos:<br><a href="mailto:comunicaciones@casagestalt.com">comunicaciones@casagestalt.com</a></p>
-                </div>
-                <div class="contacto-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="https://api.whatsapp.com/send?phone=59892403643" target="_blank">Hablemos: 092 403 643</a>
-                </div>
-                <div class="contacto-item">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                    <p>Visitanos: Luis de la Torre 614, of. 4</p>
-                </div>
-            </div>
+      <article class="curso-card">
+        <img src="./img/inicio/mayo1.jpg" alt="Gestalt para trabajar con grupos y equipos" loading="lazy">
+        <div class="curso-card-body">
+          <h3>Gestalt para trabajar con grupos y equipos</h3>
+          <p>Con base en la metodología gestáltica, te ofrecemos herramientas para atender y entender la realidad de los grupos y equipos, e intervenir de manera de mejorar su desempeño y favorecer un clima de respeto y confianza.</p>
+          <a class="btn btn-primary" href="./pages/3a.html">Conocer más</a>
         </div>
-        <div class="container"><div class="footer-base">© 2025 Casa Gestalt Uruguay · Desarrollo personal, profesional y organizacional</div></div>
-    </footer>
+      </article>
 
-    <!-- WhatsApp flotante -->
-    <a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=59892403643" target="_blank" aria-label="Escribinos por WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+      <article class="curso-card">
+        <img src="./img/inicio/mayo2.jpg" alt="Gestalt coaching" loading="lazy">
+        <div class="curso-card-body">
+          <h3>Ayudá a otras personas mediante el gestalt coaching</h3>
+          <p>El Gestalt coaching es una herramienta útil para quienes practican la ayuda, mediante la integración de una perspectiva centrada en las personas, que valora sus recursos y promueve su desarrollo pleno.</p>
+          <a class="btn btn-primary" href="./pages/3c.html">Conocer más</a>
+        </div>
+      </article>
 
-    <!-- ===================== SCRIPTS ===================== -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-      // --- Menú mobile (crítico: se registra primero) ---
-      const burger = document.getElementById('burger');
-      const drawer = document.getElementById('mobile-menu');
-      burger.addEventListener('click', () => {
-        const open = drawer.classList.toggle('open');
-        burger.classList.toggle('open', open);
-        burger.setAttribute('aria-expanded', open);
-      });
-      drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-        drawer.classList.remove('open'); burger.classList.remove('open');
-        burger.setAttribute('aria-expanded', false);
-      }));
+      <article class="curso-card">
+        <img src="./img/casagestalt2.webp" alt="Comunicación que transforma" loading="lazy">
+        <div class="curso-card-body">
+          <h3>Comunicación que transforma</h3>
+          <p>Aportamos herramientas concretas para utilizar especialmente en aquellos espacios en los que es importante cuidar las relaciones y construir un clima de respeto y cooperación.</p>
+          <a class="btn btn-primary" href="./pages/3b.html">Conocer más</a>
+        </div>
+      </article>
 
-      // --- Sombra del header al hacer scroll ---
-      const header = document.getElementById('site-header');
-      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
-      window.addEventListener('scroll', onScroll, { passive: true });
-      onScroll();
+    </div>
+  </section>
 
-      // --- Animaciones de entrada ---
-      if ('IntersectionObserver' in window) {
-        const io = new IntersectionObserver((entries) => {
-          entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-        }, { threshold: 0.05, rootMargin: '0px 0px -8% 0px' });
-        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-      } else {
-        document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
-      }
+  <!-- ═══════════════════ FORMARSE EN CASAGESTALT ══════════════ -->
+  <section class="formarse reveal">
+    <div class="container">
+      <img class="banner" src="./img/inicio/banner_ramas.jpg" alt="Puente en un bosque" loading="lazy">
 
-      // --- Swiper (aislado: si falla, no afecta lo anterior) ---
-      try {
-        if (window.Swiper) {
-          new Swiper('#swipercoso', {
-            loop: true, speed: 800, autoplay: { delay: 12000 },
-            pagination: { el: '.swiper-pagination', clickable: true },
-            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-          });
-        }
-      } catch (err) { console.warn('Swiper no disponible:', err); }
-    </script>
+      <div class="section-head">
+        <h2>Formarse en casagestalt</h2>
+      </div>
+      <div class="texto">
+        <p>La gestalt es un enfoque dinámico, holístico y creativo, que se apoya en la aceptación del pasado, la construcción de un nuevo futuro y sobre todo en el contacto pleno con el presente. Aporta profundidad, congruencia y eficacia a los procesos de cambio.</p>
+        <p>Una propuesta metodológica para el desarrollo personal y profesional, que pone foco en la trasmisión y práctica de herramientas concretas, a través de un aprendizaje participativo y vivencial.</p>
+      </div>
+
+      <div class="ramas-grid">
+        <a class="rama rama-1" href="./pages/3a.html">
+          <span class="ic"><i class="fa-solid fa-users"></i></span>
+          <span class="label">GRUPOS</span>
+          <i class="fa-solid fa-arrow-right arrow"></i>
+        </a>
+        <a class="rama rama-2" href="./pages/3b.html">
+          <span class="ic"><i class="fa-solid fa-comments"></i></span>
+          <span class="label">COMUNICACIÓN</span>
+          <i class="fa-solid fa-arrow-right arrow"></i>
+        </a>
+        <a class="rama rama-3" href="./pages/3c.html">
+          <span class="ic"><i class="fa-solid fa-seedling"></i></span>
+          <span class="label">COACHING</span>
+          <i class="fa-solid fa-arrow-right arrow"></i>
+        </a>
+      </div>
+
+      <div class="cta-wrap">
+        <a class="btn btn-accent" href="https://forms.gle/KLwi8UTeVCCmMYkWA" target="_blank" rel="noopener">Vení a una charla informativa</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ CARDS DE NAVEGACIÓN ═════════════════ -->
+  <section class="nav-cards reveal">
+    <div class="container">
+      <div class="cards-grid">
+        <a class="ncard" href="./pages/1.html">
+          <img src="./img/inicio/card1.webp" alt="Somos casagestalt" loading="lazy">
+          <div class="ncard-text"><p>Somos casagestalt</p><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+        <a class="ncard" href="./pages/2.html">
+          <img src="./img/inicio/card2.webp" alt="Quienes nos eligen" loading="lazy">
+          <div class="ncard-text"><p>Quienes nos eligen</p><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+        <a class="ncard" href="./pages/3.html">
+          <img src="./img/inicio/card3.webp" alt="Opciones de formación" loading="lazy">
+          <div class="ncard-text"><p>Opciones de formación</p><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+        <a class="ncard" href="./pages/4.html">
+          <img src="./img/inicio/card4.webp" alt="Soluciones para organizaciones" loading="lazy">
+          <div class="ncard-text"><p>Soluciones para organizaciones</p><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+        <a class="ncard" href="./pages/5.html">
+          <img src="./img/inicio/card5.webp" alt="Testimonios" loading="lazy">
+          <div class="ncard-text"><p>Testimonios de nuestros participantes</p><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+        <a class="ncard" href="./pages/6.html">
+          <img src="./img/inicio/card6.webp" alt="Conversemos sobre tus necesidades" loading="lazy">
+          <div class="ncard-text"><p>Conversemos sobre tus necesidades</p><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="./js/components.js" defer></script>
 </body>
 </html>
