@@ -271,8 +271,8 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--azul-900); line-heig
   .menu { display: flex; align-items: center; gap: 26px; }
   .menu a { font-family: var(--font-display); font-weight: 500; font-size: 14px; color: #cdd9e6; transition: color .2s ease; }
   .menu a:hover { color: #fff; }
-  .nav-menu { display: flex; align-items: center; gap: 18px; }
-  .nav-menu a { font-family: var(--font-display); font-weight: 500; font-size: 13px; color: #cdd9e6; transition: color .2s ease; }
+  .nav-menu { display: flex; align-items: center; gap: 26px; }
+  .nav-menu a { font-family: var(--font-display); font-weight: 500; font-size: 14px; color: #cdd9e6; transition: color .2s ease; }
   .nav-menu a:hover { color: #fff; }
   .nav-cta { display: inline-flex; }
   .nav-cta { background: var(--ambar); color: var(--ambar-700); }
