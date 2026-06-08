@@ -78,51 +78,38 @@
   if (footerEl) {
     footerEl.innerHTML = `
       <div class="footer-banner">
-        <img src="${root}img/inicio/footer.webp" alt="" aria-hidden="true" loading="lazy">
+        <img src="${root}img/inicio/footer.webp" alt="Grupo de personas" loading="lazy">
       </div>
       <footer class="site-footer">
-        <div class="container">
-          <div class="footer-grid">
-
-            <div class="footer-redes">
-              <h3>Seguinos en redes</h3>
-              <div class="icons">
-                <a href="https://www.facebook.com/CasaGestalt/" target="_blank" rel="noopener" aria-label="Facebook">
-                  <i class="fa-brands fa-square-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/casagestalt_mvd" target="_blank" rel="noopener" aria-label="Instagram">
-                  <i class="fa-brands fa-square-instagram"></i>
-                </a>
-                <a href="https://uy.linkedin.com/company/casagestalt" target="_blank" rel="noopener" aria-label="LinkedIn">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </div>
+        <div class="container footer-grid">
+          <div class="footer-redes">
+            <h3>Seguinos en redes</h3>
+            <div class="redes-iconos">
+              <a href="https://www.facebook.com/CasaGestalt/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="https://www.instagram.com/casagestalt_mvd" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://uy.linkedin.com/company/casagestalt" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-
-            <div class="footer-contacto">
-              <div class="contacto-item">
-                <i class="fa-solid fa-calendar-check"></i>
-                <p><a href="${ctaHref}" target="_blank" rel="noopener">Agendá una charla informativa gratuita</a></p>
-              </div>
-              <div class="contacto-item">
-                <i class="fa-solid fa-envelope"></i>
-                <p><a href="mailto:comunicaciones@casagestalt.com">comunicaciones@casagestalt.com</a></p>
-              </div>
-              <div class="contacto-item">
-                <i class="fa-brands fa-whatsapp"></i>
-                <p><a href="https://api.whatsapp.com/send?phone=59892403643" target="_blank" rel="noopener">092 403 643</a></p>
-              </div>
-              <div class="contacto-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Luis de la Torre 614 of. 4</p>
-              </div>
-            </div>
-
           </div>
-          <div class="footer-base">
-            <p>© 2025 Casa Gestalt Uruguay — Todos los derechos reservados</p>
+          <div class="footer-contacto">
+            <div class="contacto-item">
+              <i class="fa-solid fa-comment"></i>
+              <a href="${ctaHref}" target="_blank" rel="noopener">Inscribite para una charla informativa</a>
+            </div>
+            <div class="contacto-item">
+              <i class="fa-solid fa-envelope"></i>
+              <p>Escribinos:<br><a href="mailto:comunicaciones@casagestalt.com">comunicaciones@casagestalt.com</a></p>
+            </div>
+            <div class="contacto-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="https://api.whatsapp.com/send?phone=59892403643" target="_blank" rel="noopener">Hablemos: 092 403 643</a>
+            </div>
+            <div class="contacto-item">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <p>Visitanos: Luis de la Torre 614, of. 4</p>
+            </div>
           </div>
         </div>
+        <div class="container"><div class="footer-base">© 2025 Casa Gestalt Uruguay · Desarrollo personal, profesional y organizacional</div></div>
       </footer>
     `;
   }

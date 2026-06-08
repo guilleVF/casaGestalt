@@ -31,39 +31,7 @@
 <body>
 
     <!-- ===================== HEADER ===================== -->
-    <header class="site-header" id="site-header">
-        <div class="container nav-inner">
-            <a class="logo" href="./index.html"><img src="./img/logo.png" alt="Casa Gestalt"></a>
-
-            <nav class="menu">
-                <a href="./pages/1.html">Somos casagestalt</a>
-                <a href="./pages/2.html">Quienes nos eligen</a>
-                <a href="./pages/3.html">Formación</a>
-                <a href="./pages/4.html">Organizaciones</a>
-                <a href="./pages/5.html">Testimonios</a>
-                <a href="./pages/6.html">Contacto</a>
-                <a href="./pages/7.html">Nuestro Equipo</a>
-            </nav>
-
-            <a class="btn btn-primary nav-cta" href="https://forms.gle/KLwi8UTeVCCmMYkWA" target="_blank">Hacé tu consulta</a>
-
-            <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </header>
-
-    <!-- Drawer mobile -->
-    <div class="mobile-menu" id="mobile-menu">
-        <a href="./pages/1.html">Somos casagestalt</a>
-        <a href="./pages/2.html">Quienes nos eligen</a>
-        <a href="./pages/3.html">Opciones de formación</a>
-        <a href="./pages/4.html">Soluciones para organizaciones</a>
-        <a href="./pages/5.html">Testimonios</a>
-        <a href="./pages/7.html">Nuestro equipo</a>
-        <a href="./pages/6.html">Conversemos sobre tus necesidades</a>
-        <a class="btn btn-primary" href="https://forms.gle/KLwi8UTeVCCmMYkWA" target="_blank">Hacé tu consulta</a>
-    </div>
+    <div id="site-header"></div>
 
     <!-- ===================== HERO ===================== -->
     <section class="hero">
@@ -236,81 +204,11 @@
     </section>
 
     <!-- ===================== FOOTER ===================== -->
-    <div class="footer-banner">
-        <img src="./img/inicio/footer.webp" alt="Grupo de personas" loading="lazy">
-    </div>
-
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-redes">
-                <h3>Seguinos en redes</h3>
-                <div class="redes-iconos">
-                    <a href="https://www.facebook.com/CasaGestalt/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.instagram.com/casagestalt_mvd" target="_blank" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://uy.linkedin.com/company/casagestalt" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-contacto">
-                <div class="contacto-item">
-                    <i class="fa-solid fa-comment"></i>
-                    <a href="https://forms.gle/KLwi8UTeVCCmMYkWA" target="_blank">Inscribite para una charla informativa</a>
-                </div>
-                <div class="contacto-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>Escribinos:<br><a href="mailto:comunicaciones@casagestalt.com">comunicaciones@casagestalt.com</a></p>
-                </div>
-                <div class="contacto-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="https://api.whatsapp.com/send?phone=59892403643" target="_blank">Hablemos: 092 403 643</a>
-                </div>
-                <div class="contacto-item">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                    <p>Visitanos: Luis de la Torre 614, of. 4</p>
-                </div>
-            </div>
-        </div>
-        <div class="container"><div class="footer-base">© 2025 Casa Gestalt Uruguay · Desarrollo personal, profesional y organizacional</div></div>
-    </footer>
-
-    <!-- WhatsApp flotante -->
-    <a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=59892403643" target="_blank" aria-label="Escribinos por WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+    <div id="site-footer"></div>
 
     <!-- ===================== SCRIPTS ===================== -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      // --- Menú mobile (crítico: se registra primero) ---
-      const burger = document.getElementById('burger');
-      const drawer = document.getElementById('mobile-menu');
-      burger.addEventListener('click', () => {
-        const open = drawer.classList.toggle('open');
-        burger.classList.toggle('open', open);
-        burger.setAttribute('aria-expanded', open);
-      });
-      drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-        drawer.classList.remove('open'); burger.classList.remove('open');
-        burger.setAttribute('aria-expanded', false);
-      }));
-
-      // --- Sombra del header al hacer scroll ---
-      const header = document.getElementById('site-header');
-      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
-      window.addEventListener('scroll', onScroll, { passive: true });
-      onScroll();
-
-      // --- Animaciones de entrada ---
-      if ('IntersectionObserver' in window) {
-        const io = new IntersectionObserver((entries) => {
-          entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-        }, { threshold: 0.05, rootMargin: '0px 0px -8% 0px' });
-        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-      } else {
-        document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
-      }
-
-      // --- Swiper (aislado: si falla, no afecta lo anterior) ---
       try {
         if (window.Swiper) {
           new Swiper('#swipercoso', {
@@ -321,5 +219,6 @@
         }
       } catch (err) { console.warn('Swiper no disponible:', err); }
     </script>
+    <script src="./js/components.js" defer></script>
 </body>
 </html>
