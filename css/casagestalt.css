@@ -281,8 +281,9 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--azul-900); line-heig
 
   .cards-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
 
-  .footer-grid { grid-template-columns: 1fr 1fr; align-items: start; }
-  .footer-redes { border-right: 1px solid rgba(255,255,255,.12); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+  .footer-redes { padding-right: 2rem; border-right: 1px solid rgba(255,255,255,.12); }
+  .footer-contacto { padding-left: 2rem; }
 }
 
 /* Nav desktop — breakpoint más alto para que 6 items quepan en una línea */
