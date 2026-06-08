@@ -19,19 +19,19 @@
   const p = (file) => inPages ? file : `./pages/${file}`;
 
   const navItems = [
-    { label: 'Somos casagestalt',                    href: p('1.html') },
-    { label: 'Quienes nos eligen',                   href: p('2.html') },
-    { label: 'Opciones de formación',                href: p('3.html') },
-    { label: 'Soluciones para organizaciones',       href: p('4.html') },
-    { label: 'Testimonios',                          href: p('5.html') },
-    { label: 'Conversemos sobre tus necesidades',    href: p('6.html') },
-    { label: 'Nuestro equipo',                       href: p('7.html') },
+    { short: 'Somos casagestalt',   label: 'Somos casagestalt',                 href: p('1.html') },
+    { short: 'Quienes nos eligen',  label: 'Quienes nos eligen',                href: p('2.html') },
+    { short: 'Formación',           label: 'Opciones de formación',             href: p('3.html') },
+    { short: 'Organizaciones',      label: 'Soluciones para organizaciones',    href: p('4.html') },
+    { short: 'Testimonios',         label: 'Testimonios',                       href: p('5.html') },
+    { short: 'Contacto',            label: 'Conversemos sobre tus necesidades', href: p('6.html') },
+    { short: 'Nuestro equipo',      label: 'Nuestro equipo',                    href: p('7.html') },
   ];
 
   const ctaHref = 'https://forms.gle/KLwi8UTeVCCmMYkWA';
 
   const desktopLinks = navItems.map(n =>
-    `<a href="${n.href}">${n.label}</a>`
+    `<a href="${n.href}">${n.short}</a>`
   ).join('');
 
   const mobileLinks = navItems.map(n =>
