@@ -81,7 +81,7 @@
         <img src="${root}img/inicio/footer.webp" alt="Grupo de personas" loading="lazy">
       </div>
       <footer class="site-footer">
-        <div class="container footer-grid" id="footer-grid-inner">
+        <div class="container footer-grid">
           <div class="footer-redes">
             <h3>Seguinos en redes</h3>
             <div class="redes-iconos">
@@ -113,24 +113,6 @@
       </footer>
     `;
   }
-
-  const applyFooterLayout = () => {
-    const grid = document.getElementById('footer-grid-inner');
-    const redes = grid?.querySelector('.footer-redes');
-    const contacto = grid?.querySelector('.footer-contacto');
-    if (!grid || !redes || !contacto) return;
-    if (window.innerWidth >= 900) {
-      grid.style.cssText = 'display:flex;flex-direction:row;gap:0;align-items:start;';
-      redes.style.cssText = 'flex:1;padding-right:2rem;border-right:1px solid rgba(255,255,255,.12);';
-      contacto.style.cssText = 'flex:1;padding-left:2rem;';
-    } else {
-      grid.style.cssText = '';
-      redes.style.cssText = '';
-      contacto.style.cssText = '';
-    }
-  };
-  applyFooterLayout();
-  window.addEventListener('resize', applyFooterLayout);
 
   /* ── WhatsApp flotante ─────────────────────────────────────── */
   const wa = document.createElement('a');
