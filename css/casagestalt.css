@@ -426,7 +426,7 @@ blockquote.testimonio cite { display: block; margin-top: 1rem; font-style: norma
   box-shadow: var(--sh-sm); transition: box-shadow 0.2s; }
 .course-item[open] { box-shadow: var(--sh-md); }
 .course-summary { list-style: none; display: grid;
-  grid-template-columns: 1fr 100px 140px 20px;
+  grid-template-columns: 1fr 150px 100px 20px;
   align-items: center; gap: 0.75rem; padding: 1.125rem 1.25rem;
   cursor: pointer; user-select: none; }
 .course-summary::-webkit-details-marker { display: none; }
