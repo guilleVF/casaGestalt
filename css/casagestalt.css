@@ -164,8 +164,9 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--azul-900); line-heig
   top: 40%; width: 36px; height: 36px;
   background: var(--surface); border-radius: 50%; box-shadow: var(--sh-md);
 }
-.cursos .swiper-button-prev { left: -18px; }
-.cursos .swiper-button-next { right: -18px; }
+.cursos .container { padding-left: 52px; padding-right: 52px; }
+.cursos .swiper-button-prev { left: 8px; }
+.cursos .swiper-button-next { right: 8px; }
 .cursos .swiper-button-prev::after,
 .cursos .swiper-button-next::after { font-size: 14px; font-weight: 700; color: var(--azul-700); }
 .cursos .swiper-pagination { bottom: 0; }
