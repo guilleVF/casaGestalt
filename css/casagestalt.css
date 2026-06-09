@@ -158,10 +158,16 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--azul-900); line-heig
    SWIPER (cursos destacados)
    ========================================================= */
 .cursos { background: var(--azul-50); }
-.cursos .swiper-wrapper-outer { overflow: hidden; margin: 0 -52px; }
-.cursos .swiper { padding: 0 52px 40px; overflow: visible; }
-.cursos .swiper-button-prev { left: 0; }
-.cursos .swiper-button-next { right: 0; }
+.cursos .swiper { padding-bottom: 40px; overflow: hidden; }
+.cursos .swiper-button-prev,
+.cursos .swiper-button-next {
+  top: 40%; width: 36px; height: 36px;
+  background: var(--surface); border-radius: 50%; box-shadow: var(--sh-md);
+}
+.cursos .swiper-button-prev { left: -18px; }
+.cursos .swiper-button-next { right: -18px; }
+.cursos .swiper-button-prev::after,
+.cursos .swiper-button-next::after { font-size: 14px; font-weight: 700; color: var(--azul-700); }
 .cursos .swiper-pagination { bottom: 0; }
 .curso-slide { display: grid; gap: 26px; align-items: center; padding: 6px; }
 .curso-media { border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--sh-md); aspect-ratio: 16/11; }
